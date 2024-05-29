@@ -4,10 +4,12 @@
  */
 package tfc.practica_intermodular;
 
+import java.util.ArrayList;
 import javax.swing.table.DefaultTableModel;
+
 /**
  *
- * @author 
+ * @author Ana
  */
 public class jFramePrincipal extends javax.swing.JFrame {
 
@@ -16,11 +18,11 @@ public class jFramePrincipal extends javax.swing.JFrame {
      */
     public jFramePrincipal() {
         initComponents();
-        
+
     }
 
     /**
-     * 
+     *
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -48,11 +50,14 @@ public class jFramePrincipal extends javax.swing.JFrame {
         L5 = new javax.swing.JLabel();
         Boton = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
+        satelites = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(0, 0, 0));
+        setPreferredSize(new java.awt.Dimension(700, 582));
 
         Estrella.setText("Estrella:");
 
@@ -69,6 +74,8 @@ public class jFramePrincipal extends javax.swing.JFrame {
         Titulo.setFont(new java.awt.Font("Scheherazade", 1, 36)); // NOI18N
         Titulo.setText("PRÁCTICA INTERMODULAR -  1ºDAM");
 
+        jTable1.setBackground(new java.awt.Color(0, 51, 51));
+        jTable1.setForeground(new java.awt.Color(255, 255, 255));
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null, null},
@@ -104,6 +111,16 @@ public class jFramePrincipal extends javax.swing.JFrame {
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/sol.jpg"))); // NOI18N
 
+        L1.setText("1");
+
+        L2.setText("2");
+
+        L3.setText("3");
+
+        L4.setText("4");
+
+        L5.setText("5");
+
         Boton.setText("Ver Estrella");
         Boton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -118,86 +135,89 @@ public class jFramePrincipal extends javax.swing.JFrame {
             }
         });
 
+        satelites.setText("Sátelites");
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/foto.jpg"))); // NOI18N
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+            .addGroup(layout.createSequentialGroup()
                 .addGap(30, 30, 30)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 631, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                        .addComponent(Estrella, javax.swing.GroupLayout.PREFERRED_SIZE, 284, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(82, 82, 82)
-                        .addComponent(selectorPlanetas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel1)
+                    .addComponent(Boton)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(TipoEstrella)
-                                    .addComponent(Radio, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(L1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(L2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(Temperatura, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(Distancia, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(Composicion, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(L3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(L4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(L5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(Boton)
-                                .addGap(0, 0, Short.MAX_VALUE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 631, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(16, 16, 16))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(820, 820, 820)
-                .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(TipoEstrella)
+                            .addComponent(Radio, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Temperatura, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Distancia, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Composicion, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(12, 12, 12)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(L1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(L2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(L5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(L4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(L3, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(Estrella, javax.swing.GroupLayout.PREFERRED_SIZE, 284, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(Titulo)
-                        .addGap(168, 168, 168))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jButton1)
-                        .addContainerGap())))
+                    .addComponent(selectorPlanetas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(6, 6, 6)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(satelites, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jButton1)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 829, Short.MAX_VALUE)
+                                        .addComponent(jScrollPane2)))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addContainerGap(575, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(282, 282, 282)
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 562, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(314, 314, 314)
+                        .addComponent(Titulo)))
+                .addGap(0, 929, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addGap(23, 23, 23)
+                .addComponent(Titulo, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(206, 206, 206)
+                        .addGap(120, 120, 120)
                         .addComponent(jLabel9))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(28, 28, 28)
-                        .addComponent(Titulo, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(55, 55, 55)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(Estrella)
-                            .addComponent(selectorPlanetas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGap(34, 34, 34)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(selectorPlanetas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(Estrella))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jLabel1))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(satelites)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(27, 27, 27)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(TipoEstrella)
-                            .addComponent(L1))
+                            .addComponent(L1, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(Radio)
@@ -208,18 +228,16 @@ public class jFramePrincipal extends javax.swing.JFrame {
                             .addComponent(L3))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(Distancia)
-                            .addComponent(L4))
+                            .addComponent(L4)
+                            .addComponent(Distancia))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(Composicion)
                             .addComponent(L5))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(Boton))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 65, Short.MAX_VALUE)
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 10, Short.MAX_VALUE)
                 .addComponent(jButton1)
                 .addContainerGap())
         );
@@ -228,92 +246,148 @@ public class jFramePrincipal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void selectorPlanetasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_selectorPlanetasActionPerformed
-       // Combo Box:
-// Los comentarios solo los he puesto en el primero para que se reduzca el código
-if (selectorPlanetas.getSelectedItem().equals("Marte")) {
-    // Obtener los datos de Marte
-    ConexionBaseDatos conexion = new ConexionBaseDatos();
-    String[] datosMarte = conexion.conectarConsultarMarte();
-    
-    // Obtener el modelo de datos de la tabla
-    DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+        // Combo Box:
+        // Los comentarios solo los he puesto en el primero para que se reduzca el código
+        if (selectorPlanetas.getSelectedItem().equals("Marte")) {
+            // Obtener los datos de Marte
+            ConexionBaseDatos conexion = new ConexionBaseDatos();
+            String[] datosMarte = conexion.conectarConsultarMarte();
 
-    // Limpiar la tabla
-    model.setRowCount(0);
+            // Obtener el modelo de datos de la tabla
+            DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
 
-    // Agregar los datos a la tabla
-    model.addRow(new Object[] { datosMarte[0], datosMarte[1], datosMarte[2], datosMarte[3], datosMarte[4], datosMarte[5], datosMarte[6], datosMarte[7] });
-    
-} else if (selectorPlanetas.getSelectedItem().equals("Tierra")) {
-    
-    ConexionBaseDatos conexion = new ConexionBaseDatos();
-    String[] datosTierra = conexion.conectarConsultarTierra();
-    DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
-    model.setRowCount(0);
-    model.addRow(new Object[] { datosTierra[0], datosTierra[1], datosTierra[2], datosTierra[3], datosTierra[4], datosTierra[5], datosTierra[6], datosTierra[7] });
-    
-} else if (selectorPlanetas.getSelectedItem().equals("Venus")) {
-    ConexionBaseDatos conexion = new ConexionBaseDatos();
-    String[] datosVenus = conexion.conectarConsultarVenus();
-    DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
-    model.setRowCount(0);
-    model.addRow(new Object[] { datosVenus[0], datosVenus[1], datosVenus[2], datosVenus[3], datosVenus[4], datosVenus[5], datosVenus[6], datosVenus[7] });
-    
-} else if (selectorPlanetas.getSelectedItem().equals("Saturno")) {
-    ConexionBaseDatos conexion = new ConexionBaseDatos();
-    String[] datosSaturno = conexion.conectarConsultarSaturno();
-    DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
-    model.setRowCount(0);
-    model.addRow(new Object[] { datosSaturno[0], datosSaturno[1], datosSaturno[2], datosSaturno[3], datosSaturno[4], datosSaturno[5], datosSaturno[6], datosSaturno[7] });
-    
-} else if (selectorPlanetas.getSelectedItem().equals("Júpiter")) {
-    ConexionBaseDatos conexion = new ConexionBaseDatos();
-    String[] datosJupiter = conexion.conectarConsultarJupiter();
-    DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
-    model.setRowCount(0);
-    model.addRow(new Object[] { datosJupiter[0], datosJupiter[1], datosJupiter[2], datosJupiter[3], datosJupiter[4], datosJupiter[5], datosJupiter[6], datosJupiter[7] });
-    
-} else if (selectorPlanetas.getSelectedItem().equals("Urano")) {
-    ConexionBaseDatos conexion = new ConexionBaseDatos();
-    String[] datosUrano = conexion.conectarConsultarUrano();
-    DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
-    model.setRowCount(0);
-    model.addRow(new Object[] { datosUrano[0], datosUrano[1], datosUrano[2], datosUrano[3], datosUrano[4], datosUrano[5], datosUrano[6], datosUrano[7] });
-    
-} else if (selectorPlanetas.getSelectedItem().equals("Neptuno")) {
-    ConexionBaseDatos conexion = new ConexionBaseDatos();
-    String[] datosNeptuno = conexion.conectarConsultarNeptuno();
-    DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
-    model.setRowCount(0);
-    model.addRow(new Object[] { datosNeptuno[0], datosNeptuno[1], datosNeptuno[2], datosNeptuno[3], datosNeptuno[4], datosNeptuno[5], datosNeptuno[6], datosNeptuno[7] });
-    
-} else if (selectorPlanetas.getSelectedItem().equals("Mercurio")) {
-    ConexionBaseDatos conexion = new ConexionBaseDatos();
-    String[] datosMercurio = conexion.conectarConsultarMercurio();
-    DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
-    model.setRowCount(0);
-    model.addRow(new Object[] { datosMercurio[0], datosMercurio[1], datosMercurio[2], datosMercurio[3], datosMercurio[4], datosMercurio[5], datosMercurio[6], datosMercurio[7] });
-    
-}
+            // Limpiar la tabla
+            model.setRowCount(0);
 
+            // Agregar los datos a la tabla
+            model.addRow(new Object[]{datosMarte[0], datosMarte[1], datosMarte[2], datosMarte[3], datosMarte[4], datosMarte[5], datosMarte[6], datosMarte[7]});
 
+        } else if (selectorPlanetas.getSelectedItem().equals("Tierra")) {
+
+            ConexionBaseDatos conexion = new ConexionBaseDatos();
+            String[] datosTierra = conexion.conectarConsultarTierra();
+            DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+            model.setRowCount(0);
+            model.addRow(new Object[]{datosTierra[0], datosTierra[1], datosTierra[2], datosTierra[3], datosTierra[4], datosTierra[5], datosTierra[6], datosTierra[7]});
+
+        } else if (selectorPlanetas.getSelectedItem().equals("Venus")) {
+            ConexionBaseDatos conexion = new ConexionBaseDatos();
+            String[] datosVenus = conexion.conectarConsultarVenus();
+            DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+            model.setRowCount(0);
+            model.addRow(new Object[]{datosVenus[0], datosVenus[1], datosVenus[2], datosVenus[3], datosVenus[4], datosVenus[5], datosVenus[6], datosVenus[7]});
+
+        } else if (selectorPlanetas.getSelectedItem().equals("Saturno")) {
+            ConexionBaseDatos conexion = new ConexionBaseDatos();
+            String[] datosSaturno = conexion.conectarConsultarSaturno();
+            DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+            model.setRowCount(0);
+            model.addRow(new Object[]{datosSaturno[0], datosSaturno[1], datosSaturno[2], datosSaturno[3], datosSaturno[4], datosSaturno[5], datosSaturno[6], datosSaturno[7]});
+
+        } else if (selectorPlanetas.getSelectedItem().equals("Jupiter")) {
+            ConexionBaseDatos conexion = new ConexionBaseDatos();
+            String[] datosJupiter = conexion.conectarConsultarJúpiter();
+            DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+            model.setRowCount(0);
+            model.addRow(new Object[]{datosJupiter[0], datosJupiter[1], datosJupiter[2], datosJupiter[3], datosJupiter[4], datosJupiter[5], datosJupiter[6], datosJupiter[7]});
+
+        } else if (selectorPlanetas.getSelectedItem().equals("Urano")) {
+            ConexionBaseDatos conexion = new ConexionBaseDatos();
+            String[] datosUrano = conexion.conectarConsultarUrano();
+            DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+            model.setRowCount(0);
+            model.addRow(new Object[]{datosUrano[0], datosUrano[1], datosUrano[2], datosUrano[3], datosUrano[4], datosUrano[5], datosUrano[6], datosUrano[7]});
+
+        } else if (selectorPlanetas.getSelectedItem().equals("Neptuno")) {
+            ConexionBaseDatos conexion = new ConexionBaseDatos();
+            String[] datosNeptuno = conexion.conectarConsultarNeptuno();
+            DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+            model.setRowCount(0);
+            model.addRow(new Object[]{datosNeptuno[0], datosNeptuno[1], datosNeptuno[2], datosNeptuno[3], datosNeptuno[4], datosNeptuno[5], datosNeptuno[6], datosNeptuno[7]});
+
+        } else if (selectorPlanetas.getSelectedItem().equals("Mercurio")) {
+            ConexionBaseDatos conexion = new ConexionBaseDatos();
+            String[] datosMercurio = conexion.conectarConsultarMercurio();
+            DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+            model.setRowCount(0);
+            model.addRow(new Object[]{datosMercurio[0], datosMercurio[1], datosMercurio[2], datosMercurio[3], datosMercurio[4], datosMercurio[5], datosMercurio[6], datosMercurio[7]});
+
+        }
+
+//satelites
+        if (selectorPlanetas.getSelectedItem().equals("Tierra")) {
+            // Luna
+            ConexionBaseDatos conexion = new ConexionBaseDatos();
+            String[] datosLuna = conexion.conectarConsultarLuna();
+            DefaultTableModel model = (DefaultTableModel) jTable2.getModel();
+            model.setRowCount(0); // Limpiar la tabla antes de agregar datos nuevos
+            model.addRow(new Object[]{datosLuna[0], datosLuna[1], datosLuna[2], datosLuna[3], datosLuna[4], datosLuna[5], datosLuna[6]});
+        } else if (selectorPlanetas.getSelectedItem().equals("Marte")) {
+            // Deimos
+            ConexionBaseDatos conexion = new ConexionBaseDatos();
+            String[] datosDeimos = conexion.conectarConsultarDeimos();
+            DefaultTableModel model = (DefaultTableModel) jTable2.getModel();
+            model.setRowCount(0); // Limpiar la tabla antes de agregar datos nuevos
+            model.addRow(new Object[]{datosDeimos[0], datosDeimos[1], datosDeimos[2], datosDeimos[3], datosDeimos[4], datosDeimos[5], datosDeimos[6]});
+            // Fobos
+            String[] datosFobos = conexion.conectarConsultarFobos();
+            model.addRow(new Object[]{datosFobos[0], datosFobos[1], datosFobos[2], datosFobos[3], datosFobos[4], datosFobos[5], datosFobos[6]});
+        } else if (selectorPlanetas.getSelectedItem().equals("Jupiter")) {
+            // Ío
+            ConexionBaseDatos conexion = new ConexionBaseDatos();
+            String[] datosIo = conexion.conectarConsultarÍo();
+            DefaultTableModel model = (DefaultTableModel) jTable2.getModel();
+            model.setRowCount(0); // Limpiar la tabla antes de agregar datos nuevos
+            model.addRow(new Object[]{datosIo[0], datosIo[1], datosIo[2], datosIo[3], datosIo[4], datosIo[5], datosIo[6]});
+            // Europa
+            String[] datosEuropa = conexion.conectarConsultarEuropa();
+            model.addRow(new Object[]{datosEuropa[0], datosEuropa[1], datosEuropa[2], datosEuropa[3], datosEuropa[4], datosEuropa[5], datosEuropa[6]});
+            // Ganimedes
+            String[] datosGanimedes = conexion.conectarConsultarGanimedes();
+            model.addRow(new Object[]{datosGanimedes[0], datosGanimedes[1], datosGanimedes[2], datosGanimedes[3], datosGanimedes[4], datosGanimedes[5], datosGanimedes[6]});
+            // Calisto
+            String[] datosCalisto = conexion.conectarConsultarCalisto();
+            model.addRow(new Object[]{datosCalisto[0], datosCalisto[1], datosCalisto[2], datosCalisto[3], datosCalisto[4], datosCalisto[5], datosCalisto[6]});
+        } else if (selectorPlanetas.getSelectedItem().equals("Saturno")) {
+            // Titán
+            ConexionBaseDatos conexion = new ConexionBaseDatos();
+            String[] datosTitán = conexion.conectarConsultarTitán();
+            DefaultTableModel model = (DefaultTableModel) jTable2.getModel();
+            model.setRowCount(0); // Limpiar la tabla antes de agregar datos nuevos
+            model.addRow(new Object[]{datosTitán[0], datosTitán[1], datosTitán[2], datosTitán[3], datosTitán[4], datosTitán[5], datosTitán[6]});
+            // Encélado
+            String[] datosEncélado = conexion.conectarConsultarEncélado();
+            model.addRow(new Object[]{datosEncélado[0], datosEncélado[1], datosEncélado[2], datosEncélado[3], datosEncélado[4], datosEncélado[5], datosEncélado[6]});
+        } else if (selectorPlanetas.getSelectedItem().equals("Urano")) {
+            // Titania
+            ConexionBaseDatos conexion = new ConexionBaseDatos();
+            String[] datosTitania = conexion.conectarConsultarTitania();
+            DefaultTableModel model = (DefaultTableModel) jTable2.getModel();
+            model.setRowCount(0); // Limpiar la tabla antes de agregar datos nuevos
+            model.addRow(new Object[]{datosTitania[0], datosTitania[1], datosTitania[2], datosTitania[3], datosTitania[4], datosTitania[5], datosTitania[6]});
+            // Oberón
+            String[] datosOberon = conexion.conectarConsultarOberón();
+            model.addRow(new Object[]{datosOberon[0], datosOberon[1], datosOberon[2], datosOberon[3], datosOberon[4], datosOberon[5], datosOberon[6]});
+        } else if (selectorPlanetas.getSelectedItem().equals("Venus") || selectorPlanetas.getSelectedItem().equals("Mercurio") || selectorPlanetas.getSelectedItem().equals("Neptuno") || selectorPlanetas.getSelectedItem().equals("Planeta")) {
+            // Limpiar la segunda tabla 
+            DefaultTableModel model2 = (DefaultTableModel) jTable2.getModel();
+            model2.setRowCount(0);
+        }
 
     }//GEN-LAST:event_selectorPlanetasActionPerformed
 
     private void BotonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonActionPerformed
-      
-    ConexionBaseDatos conexion = new ConexionBaseDatos();
-    String[] datosEstrella = conexion.conectarConsultarEstrella();
-    
-    // Actualizar los JLabel con los datos de Marte
-    L1.setText(datosEstrella[0]);
-    L2.setText(datosEstrella[1]);
-    L3.setText(datosEstrella[2]);
-    L4.setText(datosEstrella[3]);
-    L5.setText(datosEstrella[4]);
-    
 
-    
+        ConexionBaseDatos conexion = new ConexionBaseDatos();
+        String[] datosEstrella = conexion.conectarConsultarEstrella();
+
+        // Clic en  botón se pongan los datos de la estrella
+        L1.setText(datosEstrella[0]);
+        L2.setText(datosEstrella[1]);
+        L3.setText(datosEstrella[2]);
+        L4.setText(datosEstrella[3]);
+        L5.setText(datosEstrella[4]);
+
 
     }//GEN-LAST:event_BotonActionPerformed
 
@@ -324,15 +398,15 @@ if (selectorPlanetas.getSelectedItem().equals("Marte")) {
         L3.setText("");
         L4.setText("");
         L5.setText("");
-        
+
         // Limpiar la tabla primera
         DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
         model.setRowCount(0);
-        
+
         // Limpiar la segunda tabla 
         DefaultTableModel model2 = (DefaultTableModel) jTable2.getModel();
-        model.setRowCount(0);
-   
+        model2.setRowCount(0);
+
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
@@ -387,11 +461,13 @@ if (selectorPlanetas.getSelectedItem().equals("Marte")) {
     private javax.swing.JButton jButton1;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTable jTable1;
     private javax.swing.JTable jTable2;
+    private javax.swing.JLabel satelites;
     private javax.swing.JComboBox<String> selectorPlanetas;
     // End of variables declaration//GEN-END:variables
 }
