@@ -11,9 +11,9 @@ import java.sql.Statement;
 
 public class Satelite {
     /**
-     * Conecta a la base de datos y consulta la tabla 'satelite' para el satélite especificado.
+     * Conectamos la base de datos y consulamos la tabla Satelite.
      * 
-     * @param nombreSatelite Nombre del satélite a consultar.
+     * @param nombreSatelite Nombre del satelite que queremos hacer la consulta y asi reutilizar codigo.
      * @return Un array de Strings con los datos del satélite.
      */
     public String[] consultarSatelite(String nombreSatelite) {
@@ -22,7 +22,7 @@ public class Satelite {
 
         try (Connection conexion = ConexionBDD.obtenerConexion();
              Statement statement = conexion.createStatement();) {
-            // Lanzar consulta
+            // Lanzamos la consulta
             String sqlSatelite = "SELECT * FROM satelite WHERE nombre='" + nombreSatelite + "'";
             ResultSet resultados = statement.executeQuery(sqlSatelite);
 
