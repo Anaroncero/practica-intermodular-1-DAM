@@ -44,81 +44,80 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
-              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                  <Component id="Boton" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="TipoEstrella" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="Radio" alignment="0" min="-2" pref="54" max="-2" attributes="0"/>
-                          <Component id="Temperatura" min="-2" pref="84" max="-2" attributes="0"/>
-                          <Component id="Distancia" min="-2" pref="70" max="-2" attributes="0"/>
-                          <Component id="Composicion" min="-2" pref="87" max="-2" attributes="0"/>
+                          <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                          <Component id="Boton" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="TipoEstrella" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="Radio" alignment="0" min="-2" pref="54" max="-2" attributes="0"/>
+                                  <Component id="Temperatura" min="-2" pref="84" max="-2" attributes="0"/>
+                                  <Component id="Distancia" min="-2" pref="70" max="-2" attributes="0"/>
+                                  <Component id="Composicion" min="-2" pref="87" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="L1" max="32767" attributes="0"/>
+                                  <Component id="L2" max="32767" attributes="0"/>
+                                  <Component id="L5" max="32767" attributes="0"/>
+                                  <Component id="L4" max="32767" attributes="0"/>
+                                  <Component id="L3" min="-2" pref="87" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Component id="Estrella" min="-2" pref="284" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="L1" max="32767" attributes="0"/>
-                          <Component id="L2" max="32767" attributes="0"/>
-                          <Component id="L5" max="32767" attributes="0"/>
-                          <Component id="L4" max="32767" attributes="0"/>
-                          <Component id="L3" min="-2" pref="87" max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
-                  <Component id="Estrella" min="-2" pref="284" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="selectorPlanetas" min="-2" max="-2" attributes="0"/>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="satelites" min="-2" pref="69" max="-2" attributes="0"/>
+                          <Component id="selectorPlanetas" min="-2" max="-2" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
-                              <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="jButton1" min="-2" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                      <Component id="jScrollPane1" pref="829" max="32767" attributes="0"/>
-                                      <Component id="jScrollPane2" max="32767" attributes="0"/>
+                              <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="satelites" min="-2" pref="69" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="1" attributes="0">
+                                          <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                              <Component id="jScrollPane1" pref="829" max="32767" attributes="0"/>
+                                              <Component id="jScrollPane2" max="32767" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="jLabel9" min="-2" pref="37" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jLabel9" min="-2" pref="37" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
-              </Group>
-              <EmptySpace pref="575" max="32767" attributes="0"/>
-          </Group>
-          <Group type="102" attributes="0">
-              <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="282" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="488" max="-2" attributes="0"/>
                       <Component id="jLabel2" min="-2" pref="562" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="314" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="515" max="-2" attributes="0"/>
                       <Component id="Titulo" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace min="0" pref="929" max="32767" attributes="0"/>
+              <EmptySpace pref="575" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
-              <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
-              <Component id="Titulo" min="-2" pref="56" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
-              <Component id="jLabel2" min="-2" pref="125" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <EmptySpace min="-2" pref="120" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="330" max="-2" attributes="0"/>
                       <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" attributes="0">
-                      <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                      <Component id="Titulo" min="-2" pref="56" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jLabel2" min="-2" pref="125" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="3" attributes="0">
@@ -384,29 +383,14 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="L1">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="1"/>
-      </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="L2">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="2"/>
-      </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="L3">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="3"/>
-      </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="L4">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="4"/>
-      </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="L5">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="5"/>
-      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="Boton">
       <Properties>
