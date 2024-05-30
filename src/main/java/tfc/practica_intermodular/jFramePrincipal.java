@@ -57,7 +57,6 @@ public class jFramePrincipal extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(0, 0, 0));
-        setPreferredSize(new java.awt.Dimension(700, 582));
 
         Estrella.setText("Estrella:");
 
@@ -215,9 +214,9 @@ public class jFramePrincipal extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(TipoEstrella)
-                            .addComponent(L1, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(L1, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(TipoEstrella))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(Radio)
@@ -246,7 +245,14 @@ public class jFramePrincipal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void selectorPlanetasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_selectorPlanetasActionPerformed
-        // Combo Box:
+        /**
+         * Método que se ejecuta cuando se selecciona un planeta del ComboBox.
+         * Dependiendo del planeta seleccionado, se consultan los datos
+         * correspondientes de la base de datos y se actualizan las tablas de la
+         * interfaz gráfica.
+         */
+
+// Combo Box:
         // Los comentarios solo los he puesto en el primero para que se reduzca el código
         if (selectorPlanetas.getSelectedItem().equals("Marte")) {
             // Obtener los datos de Marte
@@ -377,7 +383,11 @@ public class jFramePrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_selectorPlanetasActionPerformed
 
     private void BotonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonActionPerformed
-
+        /**
+         * Conecta con la base de datos y consulta los datos de la estrella.
+         * Luego, actualiza los componentes de la interfaz gráfica con estos
+         * datos.
+         */
         ConexionBaseDatos conexion = new ConexionBaseDatos();
         String[] datosEstrella = conexion.conectarConsultarEstrella();
 
@@ -392,6 +402,12 @@ public class jFramePrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_BotonActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+
+        /**
+         * Limpia los JLabels estableciendo su texto en vacío. También limpia
+         * las filas de la primera y segunda tabla.
+         */
+        
         // Limpiar los JLabels
         L1.setText("");
         L2.setText("");
