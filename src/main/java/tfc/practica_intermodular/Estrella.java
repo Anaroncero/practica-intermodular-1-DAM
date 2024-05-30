@@ -11,20 +11,20 @@ import java.sql.Statement;
 
 /**
  *
- * @author Usuario
+ * @author Ana
  */
 public class Estrella {
     public String[] consultarEstrella() {
-        // Crear array para almacenar los datos
+        // Array para almacenar los datos
         String[] datosEstrella = new String[6];
 
         try (Connection conexion = ConexionBDD.obtenerConexion();
              Statement statement = conexion.createStatement();) {
-            // Lanzar consulta
+            // Lanzamos la consulta
             String sqlEstrella = "SELECT * FROM Estrella";
             ResultSet resultados = statement.executeQuery(sqlEstrella);
 
-            // Recoger datos y guardar en el array
+            // Recogemos datos y guardamos en el array
             while (resultados.next()) {
                 datosEstrella[0] = resultados.getString("nombre");
                 datosEstrella[1] = resultados.getString("tipo");
