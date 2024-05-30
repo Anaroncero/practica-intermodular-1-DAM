@@ -11,22 +11,22 @@ import java.sql.Statement;
 
 public class Planeta {
     /**
-     * Conecta a la base de datos y consulta la tabla 'planeta' para el planeta especificado.
+     * Conectamos a la base de datos y consultamos la tabla Planeta de SQL.
      * 
      * @param nombrePlaneta Nombre del planeta a consultar.
      * @return Un array de Strings con los datos del planeta.
      */
     public String[] consultarPlaneta(String nombrePlaneta) {
-        // Crear array para almacenar los datos
+        // Creamos array para almacenar los datos
         String[] datosPlaneta = new String[8];
 
         try (Connection conexion = ConexionBDD.obtenerConexion();
              Statement statement = conexion.createStatement();) {
-            // Lanzar consulta
+            // Lanzamos la consulta
             String sqlPlaneta = "SELECT * FROM planeta WHERE nombre='" + nombrePlaneta + "'";
             ResultSet resultados = statement.executeQuery(sqlPlaneta);
 
-            // Recoger datos y guardar en el array
+            // Recogemls los datos y guardamos en el array
             while (resultados.next()) {
                 datosPlaneta[0] = resultados.getString("radio_km");
                 datosPlaneta[1] = resultados.getString("distancia_media_sol_mkm");
